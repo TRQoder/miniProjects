@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Kotta+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kotta One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(59, 53, 53));
+}
+
+.calculator {
+  /* background-color: blue; */
+  border: 1px solid rgb(121, 113, 113);
+  padding: 1rem;
+  border-radius: 1rem;
+  background: transparent;
+  box-shadow: 0px 3px 5px rgba(228, 179, 179, 0.493);
+  
+}
+.calculator:hover {
+  transition: all ease 0.5s;
+  box-shadow: 0px 3px 15px rgba(236, 240, 33, 0.438);
+}
+
+input {
+  border: none;
+  width: 228px;
+  padding: 1rem;
+  margin: 0.5rem;
+  background: transparent;
+  font-size: 40px;
+  text-align: right;
+  cursor: pointer;
+  color: antiquewhite;
+}
+
+input::placeholder {
+  color: aliceblue;
+}
+
+button{
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  margin: 4px;
+  border-radius: 50%;
+  background: none;
+  color: white;
+  font-size: 20px;
+  box-shadow:-8px -6px 8px rgb(161 152 152 / 28%);
+  cursor: pointer;
+}
+button:hover{
+  box-shadow:-5px -5px 5px rgb(161, 127, 127);
+}
+
+.calculator:hover .equalBtn{
+  background-color: #ff880075;
+}
+
+.calculator:hover .operators{
+  color: rgb(87, 230, 182);
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .calculator {
+    padding: 0.5rem;
+  }
+
+  input {
+    font-size: 32px;
+    width: 200px;
+  }
+
+  button {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 16px;
+  }
+}
